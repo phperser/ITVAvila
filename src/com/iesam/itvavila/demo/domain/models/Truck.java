@@ -1,12 +1,13 @@
-package com.iesam.demo.domain.models;
+package com.iesam.itvavila.demo.domain.models;
 
-public class Motorbyke implements Vehiculo {
+public class Truck implements Vehiculo{
     private String matricula;
     private String brand;
     private String model;
     private String color;
     private String matricDate;
-    private Double diamRuedas;
+    private Double tara;
+    private Double longi;
 
     @Override
     public String getMatricula() {
@@ -16,7 +17,6 @@ public class Motorbyke implements Vehiculo {
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
-
     @Override
     public String getBrand() {
         return brand;
@@ -25,7 +25,6 @@ public class Motorbyke implements Vehiculo {
     public void setBrand(String brand) {
         this.brand = brand;
     }
-
     @Override
     public String getModel() {
         return model;
@@ -34,7 +33,6 @@ public class Motorbyke implements Vehiculo {
     public void setModel(String model) {
         this.model = model;
     }
-
     @Override
     public String getColor() {
         return color;
@@ -43,7 +41,6 @@ public class Motorbyke implements Vehiculo {
     public void setColor(String color) {
         this.color = color;
     }
-
     @Override
     public String getMatricDate() {
         return matricDate;
@@ -53,11 +50,19 @@ public class Motorbyke implements Vehiculo {
         this.matricDate = matricDate;
     }
 
-    public Double getDiamRuedas() {
-        return diamRuedas;
+    public Double getTara() {
+        return tara;
     }
 
-    public void setDiamRuedas(Double diamRuedas) {
-        this.diamRuedas = diamRuedas;
+    public void setTara(Double tara) {
+        this.tara = tara;
+    }
+
+    public Double getLongi() {
+        return longi;
+    }
+
+    public void setLongi(Double longi) {
+        this.longi = longi;
     }
 }

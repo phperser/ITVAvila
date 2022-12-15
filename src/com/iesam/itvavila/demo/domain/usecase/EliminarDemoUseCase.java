@@ -1,10 +1,7 @@
 package com.iesam.itvavila.demo.domain.usecase;
 
-import com.iesam.itvavila.demo.data.DemoDataStore;
-import com.iesam.itvavila.demo.domain.models.Demo;
-
 public class EliminarDemoUseCase {
-    private DemoDataStore dataStore = DemoDataStore.getInstance();
+    private com.iesam.itvavila.demo.data.OwnerDataStore dataStore = com.iesam.itvavila.demo.data.OwnerDataStore.getInstance();
 
     public void execute(String codigo) {
         dataStore.eliminar(codigo);

@@ -1,13 +1,12 @@
-package com.iesam.demo.domain.models;
+package com.iesam.itvavila.demo.domain.models;
 
-public class Truck implements Vehiculo{
+public class Car implements Vehiculo {
     private String matricula;
     private String brand;
     private String model;
     private String color;
     private String matricDate;
-    private Double tara;
-    private Double longi;
+    private Integer doorNumber;
 
     @Override
     public String getMatricula() {
@@ -17,6 +16,7 @@ public class Truck implements Vehiculo{
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
+
     @Override
     public String getBrand() {
         return brand;
@@ -25,6 +25,7 @@ public class Truck implements Vehiculo{
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
     @Override
     public String getModel() {
         return model;
@@ -33,6 +34,7 @@ public class Truck implements Vehiculo{
     public void setModel(String model) {
         this.model = model;
     }
+
     @Override
     public String getColor() {
         return color;
@@ -41,6 +43,7 @@ public class Truck implements Vehiculo{
     public void setColor(String color) {
         this.color = color;
     }
+
     @Override
     public String getMatricDate() {
         return matricDate;
@@ -50,19 +53,11 @@ public class Truck implements Vehiculo{
         this.matricDate = matricDate;
     }
 
-    public Double getTara() {
-        return tara;
+    public Integer getDoorNumber() {
+        return doorNumber;
     }
 
-    public void setTara(Double tara) {
-        this.tara = tara;
-    }
-
-    public Double getLongi() {
-        return longi;
-    }
-
-    public void setLongi(Double longi) {
-        this.longi = longi;
+    public void setDoorNumber(Integer doorNumber) {
+        this.doorNumber = doorNumber;
     }
 }

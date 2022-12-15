@@ -1,12 +1,12 @@
-package com.iesam.demo.domain.models;
+package com.iesam.itvavila.demo.domain.models;
 
-public class Car implements Vehiculo {
+public class Motorbyke implements Vehiculo {
     private String matricula;
     private String brand;
     private String model;
     private String color;
     private String matricDate;
-    private Integer doorNumber;
+    private Double diamRuedas;
 
     @Override
     public String getMatricula() {
@@ -53,11 +53,11 @@ public class Car implements Vehiculo {
         this.matricDate = matricDate;
     }
 
-    public Integer getDoorNumber() {
-        return doorNumber;
+    public Double getDiamRuedas() {
+        return diamRuedas;
     }
 
-    public void setDoorNumber(Integer doorNumber) {
-        this.doorNumber = doorNumber;
+    public void setDiamRuedas(Double diamRuedas) {
+        this.diamRuedas = diamRuedas;
     }
 }

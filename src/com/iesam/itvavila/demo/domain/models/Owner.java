@@ -1,4 +1,4 @@
-package com.iesam.demo.domain.models;
+package com.iesam.itvavila.demo.domain.models;
 
 public class Owner {
     private String dni;
